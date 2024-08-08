@@ -1,0 +1,267 @@
+:root{
+  --zero-color: #001219;
+  --first-color: #0a9396;
+  --second-color: #94d2bd;
+  --third-color: #e9d8a6;
+  --text-color: white;
+
+  background-color: var(--third-color);
+}
+
+body {
+
+  --text-art: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+html.dark{
+  --first-color: black;
+  --zero-color: black;
+  --second-color: #001219;
+  --third-color: #0a9396;
+}
+
+
+html.dark{
+  background-color: var(--zero-color);
+  color: var(--third-color);
+}
+
+h2 {
+  font-family: var(--text-art);
+}
+
+h1 {
+  font-family: var(--text-art);
+  background-color: var(--second-color);
+  width: 100%;
+  height: 300px;
+  font-size: 100px;
+  color: var(--fourth-color);
+  text-align: center;
+  justify-content: center;
+  
+}
+
+.wrapper {
+  background-color: var(--second-color);
+  width: 100vw;
+  height: auto;
+  display: grid;
+  border-radius: 20px;
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.wrapper:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.wrapper.show {
+  transform: translateX(0);
+}
+
+.box {
+  background-color: var(--first-color);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--third-color);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.navbar{
+  background-color: var(--second-color);
+  width: 100%;
+  display: flex;
+}
+
+.navbar li{
+  margin: 10px;
+  background-color: var(--first-color);
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.navbar li a{
+  color: var(--fourth-color);
+  text-decoration: none;
+  font-family: var(--text-art);
+}
+
+.navbar li button{
+  gap: 1em 2em;
+  background-color: var(--zero-color);
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border: 4px var(--second-color) solid;
+  cursor: pointer;
+  color: var(--third-color);
+  text-align: center;
+
+  width: 100%;
+  right: 1000px;
+
+}
+
+
+@media screen and (min-width: 500px) {
+
+  :root{
+    --first-color: #001219;
+    --second-color: #0a9396;
+    --third-color: #94d2bd;
+    --text-color: var(--third-color);
+    --fourth-color: #f4d58d;
+  
+    --text-art: Arial;
+    background-color: var(--third-color);
+  }
+
+  html.dark{
+    --first-color: black;
+    --zero-color: black;
+    --second-color: #001219;
+    --third-color:#fad1ab ;
+  }
+  
+
+  a{
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  html.dark{
+    background-color: var(--zero-color);
+    color: var(--third-color);
+  }
+
+  h1 {
+    font-family: var(--text-art);
+  }
+
+  .b {
+    color: var(--text-color);
+  }
+
+  .wrapper {
+    background-color: var(--second-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    border-radius: 20px;
+    width: 80vw;
+    margin: 100px;
+    position: relative;
+  }
+
+  .wrapper.franz{
+    height: 550px;
+  }
+
+  .wrapper img{
+    width: 100%;
+    height: auto;
+  }
+
+
+  h1 {
+    font-family: var(--text-art);
+    background-color: var(--second-color);
+    width: 100%;
+    height: 600px;
+    font-size: 250px;
+    color: var(--fourth-color);
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .box {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--first-color);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--third-color);
+  }
+
+  .a{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+
+  .b {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+  }
+
+  .d {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+  }
+
+  .c {
+    grid-row: 2 / span 2;
+  }
+
+  .e{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+  }
+
+  .f{
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+  }
+
+  .g{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 0;
+  }
+
+  .h{
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+  }
+
+  .i{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+  }
+
+  .j{
+    grid-column: 1 / span 1;
+    grid-row: 1/ span 1;
+  }
+
+  .k{
+     grid-column: 2 / span 2;
+    grid-row: 1/ span 1;
+  }
+
+  .l{
+  grid-column: 1/ span 4;
+  grid-row: 2/ span 4;
+   
+ }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}

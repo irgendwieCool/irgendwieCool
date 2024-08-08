@@ -1,0 +1,152 @@
+:root{
+    --zero-color: #001219;
+    --first-color: #0a9396;
+    --second-color: #94d2bd;
+    --third-color: #e9d8a6;
+    --text-color: white;
+    --text-art: Arial;
+
+    background-color: var(--third-color);
+  }
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.Feld{
+    background-color: var(--second-color);
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    opacity:10%;
+    border: 2px var(--second-color);
+}
+
+.wrapper.vor{
+    transform: translateX(400%);
+}
+
+.wrapper.end{
+    opacity: 30%;
+}
+
+.wrapper{
+    transition: transform 0.6s ease;
+    transform: translateX(0);
+    background-color: var(--first-color);
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    height: 400px;
+    width: 400px;
+    
+}
+
+.Feld:hover{
+    opacity: 30%;
+    cursor: pointer;
+}
+
+.Feld.active{
+    opacity: 100%;
+}
+
+.Feld.blue{
+    color: blue;
+}
+
+.Feld.red{
+    color: red;
+}
+
+.gewonnen{
+    opacity: 0%;
+}
+
+.gewonnen.active{
+    opacity: 100%;
+    transform: translateY(-150%);
+}
+
+.gewonnen.active{
+    opacity: 100%;
+    transform: translateY(-300%);
+}
+.gewonnen.red{
+    color: red;
+}
+
+.gewonnen.blue{
+    color: blue;
+}
+
+.Feld.disabled{
+    opacity: 0;
+}
+
+.gewonnen {
+    font-family: var(--text-art);
+    width: 100%;
+    height: 100px;
+    font-size: 50px;
+    color: var(--fourth-color);
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+    transform: translateY(2000%);
+    transition: transform 0.4s ease;
+    
+}
+
+.unentschieden{
+    font-family: var(--text-art);
+    width: 100%;
+    height: 100px;
+    font-size: 50px;
+    color: var(--fourth-color);
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+    transform: translateY(2000%);
+    transition: transform 0.4s ease;
+    
+}
+
+h1 {
+    font-family: var(--text-art);
+    background-color: var(--second-color);
+    width: 100%;
+    height: 300px;
+    font-size: 90px;
+    color: var(--third-color);
+    justify-content: center;
+}
+
+.auswahl{
+    background-color: var(--first-color);
+    border: 0;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    transform: translateY(0);
+}
+
+.auswahl.vor{
+    transform: translateY(-1000%);
+}
+
+.auswahl.disabled{
+    background-color: #888;
+    color: #000;
+    cursor:auto ;
+}
